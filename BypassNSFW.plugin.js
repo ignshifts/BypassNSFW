@@ -8,7 +8,7 @@
      * @source https://github.com/ignshifts/BypassNSFW
      * @updateUrl https://github.com/ignshifts/BypassNSFW/raw/main/BypassNSFW.plugin.js
 */
-    module.exports = class MyPlugin {
+    module.exports = class Bypass {
 
         start() {
 
