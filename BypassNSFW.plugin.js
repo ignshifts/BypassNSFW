@@ -12,15 +12,21 @@
 
         start() {
 
-            const UserStore = BdApi.findModuleByProps('getCurrentUser', 'getUser').getCurrentUser();
-            UserStore.nsfwAllowed = true;
+            // temp 
+            setInterval(async () => {
+              await patch()
 
-            if(UserStore.nsfwAllowed == false) {
+            }, 5000);
+
+
+            async function patch() {
+                const UserStore = BdApi.findModuleByProps('getCurrentUser', 'getUser').getCurrentUser();
                 UserStore.nsfwAllowed = true;
-            } else {
-                 BdApi.showToast('NSFW is now enabled!', {type: "success"});
-            }
 
+                if (UserStore.nsfwAllowed == false) {
+                    UserStore.nsfwAllowed = true;
+                }
+            }
 
         }
 
