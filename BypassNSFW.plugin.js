@@ -4,7 +4,6 @@
      * @authorId 994717305542021244
      * @description View Discord NSFW-Gated content without meeting the required age requirement.
      * @version 1.0.0
-     * @invite 48qbg6UP9g
      * @source https://github.com/ignshifts/BypassNSFW
      * @updateUrl https://github.com/ignshifts/BypassNSFW/raw/main/BypassNSFW.plugin.js
 */
